@@ -1,1 +1,1 @@
-# Game-1
+# Heads and Hands demo
