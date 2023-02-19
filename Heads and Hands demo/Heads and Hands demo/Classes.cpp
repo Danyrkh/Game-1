@@ -102,7 +102,7 @@ void Monster::SetName(const std::string &s) {
     \param[in] obj Attacked object
  */
 void Monster::Attack(Creature *obj) { 
-    int old_hp = obj->GetHealth(); ///< Stores the number of lives of the victim before the attack
+    int old_hp = obj->GetHealth();
     modifier = GetAttack() - obj->GetDefend() + 1;
     if (modifier <= 0) {
         modifier = 1;
@@ -111,7 +111,7 @@ void Monster::Attack(Creature *obj) {
         SetDamage(modifier);
     }
     for (;modifier != 0; modifier--) {
-        int num = GetRandomNumber(); ///< Stores the number of rolled points on the die
+        int num = GetRandomNumber();
         if (num == 5 || num == 6) {
             std::cout << GetName() << " swings to hit..." << std::endl;
             gen = GetRandomNumber(M, GetDamage());

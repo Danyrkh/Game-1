@@ -1,0 +1,301 @@
+\hypertarget{class_player}{}\doxysection{Player Class Reference}
+\label{class_player}\index{Player@{Player}}
+
+
+Derived class \mbox{\hyperlink{class_player}{Player}}.  
+
+
+
+
+{\ttfamily \#include $<$Classes.\+hpp$>$}
+
+Inheritance diagram for Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_player}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_player_a97325dbee44f97e4f94b174b15cecc92}{Get\+Attack}} () const override
+\item 
+int \mbox{\hyperlink{class_player_a996981899afd11c9fc9ccd8e320e4856}{Get\+Defend}} () const override
+\item 
+int \mbox{\hyperlink{class_player_aa0d39b47aef31cb67ad8ef027ca463e9}{Get\+Health}} () const override
+\item 
+int \mbox{\hyperlink{class_player_afc1ab229894af528abeee1e1d149ac98}{Get\+Damage}} () const override
+\item 
+std\+::string \mbox{\hyperlink{class_player_a73a3adfd6de89909cbc847dfcc126fff}{Get\+Name}} () const override
+\item 
+void \mbox{\hyperlink{class_player_ae2227f5a5b113ff8795383710ab6d7db}{Set\+Attack}} (int \+\_\+attack) override
+\item 
+void \mbox{\hyperlink{class_player_a66527b61189ce7f2d5c0898403ac670e}{Set\+Defend}} (int \+\_\+defend) override
+\item 
+void \mbox{\hyperlink{class_player_aa1be3d054b1b952ee0cdc7405d97c1c8}{Set\+Health}} (int \+\_\+hp) override
+\item 
+void \mbox{\hyperlink{class_player_ae4c294bb9a9a857b887c97c84e2d48f0}{Set\+Damage}} (int \+\_\+damage) override
+\item 
+void \mbox{\hyperlink{class_player_a82ecb8f84e942fa38dd042fbb9dc0cc4}{Set\+Name}} (const std\+::string \&s) override
+\item 
+void \mbox{\hyperlink{class_player_a3475d6c758900711074d2a1a9d53951b}{Regeneration}} (int max\+\_\+player\+\_\+hp)
+\item 
+void \mbox{\hyperlink{class_player_a3e3a2572a228bddadfccd24f6f85e6ae}{Attack}} (\mbox{\hyperlink{class_creature}{Creature}} $\ast$obj) override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_creature}{Creature}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_creature_a90956d8bc45ececda2bd311f03f6420d}{Attack}} (\mbox{\hyperlink{class_creature}{Creature}} $\ast$obj)=0
+\item 
+virtual int \mbox{\hyperlink{class_creature_a04d1a98fd56b7736d165551ac39e7c7a}{Get\+Attack}} () const =0
+\item 
+virtual int \mbox{\hyperlink{class_creature_a29b247af6fabb0421330f1880d201e44}{Get\+Defend}} () const =0
+\item 
+virtual int \mbox{\hyperlink{class_creature_a719135bc64caa7dafaeea88b4ae6b6b6}{Get\+Health}} () const =0
+\item 
+virtual int \mbox{\hyperlink{class_creature_a28c2d0e2e94098577ec340554d20e150}{Get\+Damage}} () const =0
+\item 
+virtual std\+::string \mbox{\hyperlink{class_creature_a4d12942eb97f711163156c8ff8ca2720}{Get\+Name}} () const =0
+\item 
+virtual void \mbox{\hyperlink{class_creature_a1293e5667831b574e65c2135980235f3}{Set\+Attack}} (int \+\_\+attack)=0
+\item 
+virtual void \mbox{\hyperlink{class_creature_a023c34d1c29de2c3b2231aa639ac7c04}{Set\+Defend}} (int \+\_\+defend)=0
+\item 
+virtual void \mbox{\hyperlink{class_creature_a9cb064868459bf4609d5e730141ef6df}{Set\+Health}} (int \+\_\+hp)=0
+\item 
+virtual void \mbox{\hyperlink{class_creature_a0b8ffca8bb6add8a2bad49067d105dba}{Set\+Damage}} (int \+\_\+damage)=0
+\item 
+virtual void \mbox{\hyperlink{class_creature_a5f4bb009b3b2a62151a4c171d2e282c0}{Set\+Name}} (const std\+::string \&s)=0
+\item 
+virtual \mbox{\hyperlink{class_creature_aa991b23f4813fbdb6f875204ed49814d}{$\sim$\+Creature}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_player}{Player}} $\ast$ \mbox{\hyperlink{class_player_a5b7946a8b7a28e2db3d4ebf4dad6cf9f}{Get\+Player}} ()
+\item 
+static \mbox{\hyperlink{class_player}{Player}} $\ast$ \mbox{\hyperlink{class_player_a146a06127f8997ee0a92a1b36b0ebddb}{Check\+Player}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_creature}{Creature}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_creature_ab213a18d660683c9f91e16bf32e2e928}\label{class_creature_ab213a18d660683c9f91e16bf32e2e928}} 
+std\+::string {\bfseries name}
+\begin{DoxyCompactList}\small\item\em Character\textquotesingle{}s name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_creature_ad3807e71a93353f7fb26e123e749d45d}\label{class_creature_ad3807e71a93353f7fb26e123e749d45d}} 
+int {\bfseries attack} = 0
+\begin{DoxyCompactList}\small\item\em Character attack. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_creature_a049be5efd43c7baa5ef82af1fd1a43b2}\label{class_creature_a049be5efd43c7baa5ef82af1fd1a43b2}} 
+int {\bfseries defend} = 0
+\begin{DoxyCompactList}\small\item\em Character defend. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_creature_a7431afb99bd2f4b0e519803165d7de5c}\label{class_creature_a7431afb99bd2f4b0e519803165d7de5c}} 
+int {\bfseries hp} = 0
+\begin{DoxyCompactList}\small\item\em Character health points. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_creature_acfb6a35456dcd604954e67ebc00ada6f}\label{class_creature_acfb6a35456dcd604954e67ebc00ada6f}} 
+int {\bfseries damage} = 0
+\begin{DoxyCompactList}\small\item\em Character\textquotesingle{}s maximum damage. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_creature_ae7a896aa0cbf7389c7a6f472b30a7e67}\label{class_creature_ae7a896aa0cbf7389c7a6f472b30a7e67}} 
+int {\bfseries modifier} = 0
+\begin{DoxyCompactList}\small\item\em Attack modifier. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_creature_a38bc33a10d4ff1164a3f8f572bf29c6d}\label{class_creature_a38bc33a10d4ff1164a3f8f572bf29c6d}} 
+int {\bfseries gen} = 0
+\begin{DoxyCompactList}\small\item\em The actual value of the character\textquotesingle{}s damage calculated at the moment of impact. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Derived class \mbox{\hyperlink{class_player}{Player}}. 
+
+it\textquotesingle{}s singleton class. The class contains the overridden functions of the base class and can only have one single player object 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_player_a3e3a2572a228bddadfccd24f6f85e6ae}\label{class_player_a3e3a2572a228bddadfccd24f6f85e6ae}} 
+\index{Player@{Player}!Attack@{Attack}}
+\index{Attack@{Attack}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Attack()}{Attack()}}
+{\footnotesize\ttfamily void Player\+::\+Attack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_creature}{Creature}} $\ast$}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Simulates a player attack 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em obj} & Attacked object \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_creature}{Creature}}.
+
+\mbox{\Hypertarget{class_player_a146a06127f8997ee0a92a1b36b0ebddb}\label{class_player_a146a06127f8997ee0a92a1b36b0ebddb}} 
+\index{Player@{Player}!CheckPlayer@{CheckPlayer}}
+\index{CheckPlayer@{CheckPlayer}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{CheckPlayer()}{CheckPlayer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player}{Player}} $\ast$ Player\+::\+Check\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Checks if the object has already been created \begin{DoxyReturn}{Returns}
+Reference to an object if the object has already been created. 0 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_a97325dbee44f97e4f94b174b15cecc92}\label{class_player_a97325dbee44f97e4f94b174b15cecc92}} 
+\index{Player@{Player}!GetAttack@{GetAttack}}
+\index{GetAttack@{GetAttack}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{GetAttack()}{GetAttack()}}
+{\footnotesize\ttfamily int Player\+::\+Get\+Attack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Has no parameters \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s attack value 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_creature}{Creature}}.
+
+\mbox{\Hypertarget{class_player_afc1ab229894af528abeee1e1d149ac98}\label{class_player_afc1ab229894af528abeee1e1d149ac98}} 
+\index{Player@{Player}!GetDamage@{GetDamage}}
+\index{GetDamage@{GetDamage}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{GetDamage()}{GetDamage()}}
+{\footnotesize\ttfamily int Player\+::\+Get\+Damage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Has no parameters \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s maximum damage value 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_creature}{Creature}}.
+
+\mbox{\Hypertarget{class_player_a996981899afd11c9fc9ccd8e320e4856}\label{class_player_a996981899afd11c9fc9ccd8e320e4856}} 
+\index{Player@{Player}!GetDefend@{GetDefend}}
+\index{GetDefend@{GetDefend}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{GetDefend()}{GetDefend()}}
+{\footnotesize\ttfamily int Player\+::\+Get\+Defend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Has no parameters \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s defend value 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_creature}{Creature}}.
+
+\mbox{\Hypertarget{class_player_aa0d39b47aef31cb67ad8ef027ca463e9}\label{class_player_aa0d39b47aef31cb67ad8ef027ca463e9}} 
+\index{Player@{Player}!GetHealth@{GetHealth}}
+\index{GetHealth@{GetHealth}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{GetHealth()}{GetHealth()}}
+{\footnotesize\ttfamily int Player\+::\+Get\+Health (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Has no parameters \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s health value 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_creature}{Creature}}.
+
+\mbox{\Hypertarget{class_player_a73a3adfd6de89909cbc847dfcc126fff}\label{class_player_a73a3adfd6de89909cbc847dfcc126fff}} 
+\index{Player@{Player}!GetName@{GetName}}
+\index{GetName@{GetName}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{GetName()}{GetName()}}
+{\footnotesize\ttfamily std\+::string Player\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Has no parameters \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s name 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_creature}{Creature}}.
+
+\mbox{\Hypertarget{class_player_a5b7946a8b7a28e2db3d4ebf4dad6cf9f}\label{class_player_a5b7946a8b7a28e2db3d4ebf4dad6cf9f}} 
+\index{Player@{Player}!GetPlayer@{GetPlayer}}
+\index{GetPlayer@{GetPlayer}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{GetPlayer()}{GetPlayer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player}{Player}} $\ast$ Player\+::\+Get\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates an object if there was none before \begin{DoxyReturn}{Returns}
+Reference to an object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_a3475d6c758900711074d2a1a9d53951b}\label{class_player_a3475d6c758900711074d2a1a9d53951b}} 
+\index{Player@{Player}!Regeneration@{Regeneration}}
+\index{Regeneration@{Regeneration}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Regeneration()}{Regeneration()}}
+{\footnotesize\ttfamily void Player\+::\+Regeneration (\begin{DoxyParamCaption}\item[{int}]{max\+\_\+player\+\_\+hp }\end{DoxyParamCaption})}
+
+Restores the player\textquotesingle{}s health by 50\% of the maximum level 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em max\+\_\+player\+\_\+hp} & Maximum player\textquotesingle{}s health points \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_ae2227f5a5b113ff8795383710ab6d7db}\label{class_player_ae2227f5a5b113ff8795383710ab6d7db}} 
+\index{Player@{Player}!SetAttack@{SetAttack}}
+\index{SetAttack@{SetAttack}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{SetAttack()}{SetAttack()}}
+{\footnotesize\ttfamily void Player\+::\+Set\+Attack (\begin{DoxyParamCaption}\item[{int}]{\+\_\+attack }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Sets the palyer\textquotesingle{}s attack 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \+\_\+attack} & \mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s attack \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_creature}{Creature}}.
+
+\mbox{\Hypertarget{class_player_ae4c294bb9a9a857b887c97c84e2d48f0}\label{class_player_ae4c294bb9a9a857b887c97c84e2d48f0}} 
+\index{Player@{Player}!SetDamage@{SetDamage}}
+\index{SetDamage@{SetDamage}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{SetDamage()}{SetDamage()}}
+{\footnotesize\ttfamily void Player\+::\+Set\+Damage (\begin{DoxyParamCaption}\item[{int}]{\+\_\+damage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Sets the player\textquotesingle{}s maximum damage value 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \+\_\+damage} & \mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s maximum damage value \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_creature}{Creature}}.
+
+\mbox{\Hypertarget{class_player_a66527b61189ce7f2d5c0898403ac670e}\label{class_player_a66527b61189ce7f2d5c0898403ac670e}} 
+\index{Player@{Player}!SetDefend@{SetDefend}}
+\index{SetDefend@{SetDefend}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{SetDefend()}{SetDefend()}}
+{\footnotesize\ttfamily void Player\+::\+Set\+Defend (\begin{DoxyParamCaption}\item[{int}]{\+\_\+defend }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Sets the player\textquotesingle{}s defend 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \+\_\+defend} & \mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s defend \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_creature}{Creature}}.
+
+\mbox{\Hypertarget{class_player_aa1be3d054b1b952ee0cdc7405d97c1c8}\label{class_player_aa1be3d054b1b952ee0cdc7405d97c1c8}} 
+\index{Player@{Player}!SetHealth@{SetHealth}}
+\index{SetHealth@{SetHealth}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{SetHealth()}{SetHealth()}}
+{\footnotesize\ttfamily void Player\+::\+Set\+Health (\begin{DoxyParamCaption}\item[{int}]{\+\_\+hp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Sets the player\textquotesingle{}s health value 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \+\_\+hp} & \mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s health value \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_creature}{Creature}}.
+
+\mbox{\Hypertarget{class_player_a82ecb8f84e942fa38dd042fbb9dc0cc4}\label{class_player_a82ecb8f84e942fa38dd042fbb9dc0cc4}} 
+\index{Player@{Player}!SetName@{SetName}}
+\index{SetName@{SetName}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{SetName()}{SetName()}}
+{\footnotesize\ttfamily void Player\+::\+Set\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Sets the player\textquotesingle{}s name 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em s} & \mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s name \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_creature}{Creature}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/hamster/\+Desktop/\+Heads and Hands demo/\+Heads and Hands demo/\mbox{\hyperlink{_classes_8hpp}{Classes.\+hpp}}\item 
+/\+Users/hamster/\+Desktop/\+Heads and Hands demo/\+Heads and Hands demo/\mbox{\hyperlink{_classes_8cpp}{Classes.\+cpp}}\end{DoxyCompactItemize}

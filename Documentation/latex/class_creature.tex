@@ -1,0 +1,201 @@
+\hypertarget{class_creature}{}\doxysection{Creature Class Reference}
+\label{class_creature}\index{Creature@{Creature}}
+
+
+Abstract base class.  
+
+
+
+
+{\ttfamily \#include $<$Classes.\+hpp$>$}
+
+Inheritance diagram for Creature\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_creature}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_creature_a90956d8bc45ececda2bd311f03f6420d}{Attack}} (\mbox{\hyperlink{class_creature}{Creature}} $\ast$obj)=0
+\item 
+virtual int \mbox{\hyperlink{class_creature_a04d1a98fd56b7736d165551ac39e7c7a}{Get\+Attack}} () const =0
+\item 
+virtual int \mbox{\hyperlink{class_creature_a29b247af6fabb0421330f1880d201e44}{Get\+Defend}} () const =0
+\item 
+virtual int \mbox{\hyperlink{class_creature_a719135bc64caa7dafaeea88b4ae6b6b6}{Get\+Health}} () const =0
+\item 
+virtual int \mbox{\hyperlink{class_creature_a28c2d0e2e94098577ec340554d20e150}{Get\+Damage}} () const =0
+\item 
+virtual std\+::string \mbox{\hyperlink{class_creature_a4d12942eb97f711163156c8ff8ca2720}{Get\+Name}} () const =0
+\item 
+virtual void \mbox{\hyperlink{class_creature_a1293e5667831b574e65c2135980235f3}{Set\+Attack}} (int \+\_\+attack)=0
+\item 
+virtual void \mbox{\hyperlink{class_creature_a023c34d1c29de2c3b2231aa639ac7c04}{Set\+Defend}} (int \+\_\+defend)=0
+\item 
+virtual void \mbox{\hyperlink{class_creature_a9cb064868459bf4609d5e730141ef6df}{Set\+Health}} (int \+\_\+hp)=0
+\item 
+virtual void \mbox{\hyperlink{class_creature_a0b8ffca8bb6add8a2bad49067d105dba}{Set\+Damage}} (int \+\_\+damage)=0
+\item 
+virtual void \mbox{\hyperlink{class_creature_a5f4bb009b3b2a62151a4c171d2e282c0}{Set\+Name}} (const std\+::string \&s)=0
+\item 
+virtual \mbox{\hyperlink{class_creature_aa991b23f4813fbdb6f875204ed49814d}{$\sim$\+Creature}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_creature_ab213a18d660683c9f91e16bf32e2e928}\label{class_creature_ab213a18d660683c9f91e16bf32e2e928}} 
+std\+::string {\bfseries name}
+\begin{DoxyCompactList}\small\item\em Character\textquotesingle{}s name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_creature_ad3807e71a93353f7fb26e123e749d45d}\label{class_creature_ad3807e71a93353f7fb26e123e749d45d}} 
+int {\bfseries attack} = 0
+\begin{DoxyCompactList}\small\item\em Character attack. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_creature_a049be5efd43c7baa5ef82af1fd1a43b2}\label{class_creature_a049be5efd43c7baa5ef82af1fd1a43b2}} 
+int {\bfseries defend} = 0
+\begin{DoxyCompactList}\small\item\em Character defend. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_creature_a7431afb99bd2f4b0e519803165d7de5c}\label{class_creature_a7431afb99bd2f4b0e519803165d7de5c}} 
+int {\bfseries hp} = 0
+\begin{DoxyCompactList}\small\item\em Character health points. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_creature_acfb6a35456dcd604954e67ebc00ada6f}\label{class_creature_acfb6a35456dcd604954e67ebc00ada6f}} 
+int {\bfseries damage} = 0
+\begin{DoxyCompactList}\small\item\em Character\textquotesingle{}s maximum damage. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_creature_ae7a896aa0cbf7389c7a6f472b30a7e67}\label{class_creature_ae7a896aa0cbf7389c7a6f472b30a7e67}} 
+int {\bfseries modifier} = 0
+\begin{DoxyCompactList}\small\item\em Attack modifier. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_creature_a38bc33a10d4ff1164a3f8f572bf29c6d}\label{class_creature_a38bc33a10d4ff1164a3f8f572bf29c6d}} 
+int {\bfseries gen} = 0
+\begin{DoxyCompactList}\small\item\em The actual value of the character\textquotesingle{}s damage calculated at the moment of impact. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract base class. 
+
+The class contains a set of pure virtual functions and fields inherited by derived classes 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_creature_aa991b23f4813fbdb6f875204ed49814d}\label{class_creature_aa991b23f4813fbdb6f875204ed49814d}} 
+\index{Creature@{Creature}!````~Creature@{$\sim$Creature}}
+\index{````~Creature@{$\sim$Creature}!Creature@{Creature}}
+\doxysubsubsection{\texorpdfstring{$\sim$Creature()}{~Creature()}}
+{\footnotesize\ttfamily Creature\+::$\sim$\+Creature (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\hyperlink{class_creature}{Creature}}\textquotesingle{}s destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_creature_a90956d8bc45ececda2bd311f03f6420d}\label{class_creature_a90956d8bc45ececda2bd311f03f6420d}} 
+\index{Creature@{Creature}!Attack@{Attack}}
+\index{Attack@{Attack}!Creature@{Creature}}
+\doxysubsubsection{\texorpdfstring{Attack()}{Attack()}}
+{\footnotesize\ttfamily virtual void Creature\+::\+Attack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_creature}{Creature}} $\ast$}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_monster_ac082b244ada15828e58afc1ef6859f32}{Monster}}, and \mbox{\hyperlink{class_player_a3e3a2572a228bddadfccd24f6f85e6ae}{Player}}.
+
+\mbox{\Hypertarget{class_creature_a04d1a98fd56b7736d165551ac39e7c7a}\label{class_creature_a04d1a98fd56b7736d165551ac39e7c7a}} 
+\index{Creature@{Creature}!GetAttack@{GetAttack}}
+\index{GetAttack@{GetAttack}!Creature@{Creature}}
+\doxysubsubsection{\texorpdfstring{GetAttack()}{GetAttack()}}
+{\footnotesize\ttfamily virtual int Creature\+::\+Get\+Attack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_monster_a08844f1c497bd631542a23c8a9dcffa0}{Monster}}, and \mbox{\hyperlink{class_player_a97325dbee44f97e4f94b174b15cecc92}{Player}}.
+
+\mbox{\Hypertarget{class_creature_a28c2d0e2e94098577ec340554d20e150}\label{class_creature_a28c2d0e2e94098577ec340554d20e150}} 
+\index{Creature@{Creature}!GetDamage@{GetDamage}}
+\index{GetDamage@{GetDamage}!Creature@{Creature}}
+\doxysubsubsection{\texorpdfstring{GetDamage()}{GetDamage()}}
+{\footnotesize\ttfamily virtual int Creature\+::\+Get\+Damage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_monster_a3aab22ea7c22f6dba6949ca3c62efded}{Monster}}, and \mbox{\hyperlink{class_player_afc1ab229894af528abeee1e1d149ac98}{Player}}.
+
+\mbox{\Hypertarget{class_creature_a29b247af6fabb0421330f1880d201e44}\label{class_creature_a29b247af6fabb0421330f1880d201e44}} 
+\index{Creature@{Creature}!GetDefend@{GetDefend}}
+\index{GetDefend@{GetDefend}!Creature@{Creature}}
+\doxysubsubsection{\texorpdfstring{GetDefend()}{GetDefend()}}
+{\footnotesize\ttfamily virtual int Creature\+::\+Get\+Defend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_monster_ab613d8ce45d0b6550e44dae34313c72f}{Monster}}, and \mbox{\hyperlink{class_player_a996981899afd11c9fc9ccd8e320e4856}{Player}}.
+
+\mbox{\Hypertarget{class_creature_a719135bc64caa7dafaeea88b4ae6b6b6}\label{class_creature_a719135bc64caa7dafaeea88b4ae6b6b6}} 
+\index{Creature@{Creature}!GetHealth@{GetHealth}}
+\index{GetHealth@{GetHealth}!Creature@{Creature}}
+\doxysubsubsection{\texorpdfstring{GetHealth()}{GetHealth()}}
+{\footnotesize\ttfamily virtual int Creature\+::\+Get\+Health (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_monster_a12280c52c5f4d5fe1e9be465f450a5b5}{Monster}}, and \mbox{\hyperlink{class_player_aa0d39b47aef31cb67ad8ef027ca463e9}{Player}}.
+
+\mbox{\Hypertarget{class_creature_a4d12942eb97f711163156c8ff8ca2720}\label{class_creature_a4d12942eb97f711163156c8ff8ca2720}} 
+\index{Creature@{Creature}!GetName@{GetName}}
+\index{GetName@{GetName}!Creature@{Creature}}
+\doxysubsubsection{\texorpdfstring{GetName()}{GetName()}}
+{\footnotesize\ttfamily virtual std\+::string Creature\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_monster_a8a4df855223a5d224f10d51bc193a4be}{Monster}}, and \mbox{\hyperlink{class_player_a73a3adfd6de89909cbc847dfcc126fff}{Player}}.
+
+\mbox{\Hypertarget{class_creature_a1293e5667831b574e65c2135980235f3}\label{class_creature_a1293e5667831b574e65c2135980235f3}} 
+\index{Creature@{Creature}!SetAttack@{SetAttack}}
+\index{SetAttack@{SetAttack}!Creature@{Creature}}
+\doxysubsubsection{\texorpdfstring{SetAttack()}{SetAttack()}}
+{\footnotesize\ttfamily virtual void Creature\+::\+Set\+Attack (\begin{DoxyParamCaption}\item[{int}]{\+\_\+attack }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_player_ae2227f5a5b113ff8795383710ab6d7db}{Player}}.
+
+\mbox{\Hypertarget{class_creature_a0b8ffca8bb6add8a2bad49067d105dba}\label{class_creature_a0b8ffca8bb6add8a2bad49067d105dba}} 
+\index{Creature@{Creature}!SetDamage@{SetDamage}}
+\index{SetDamage@{SetDamage}!Creature@{Creature}}
+\doxysubsubsection{\texorpdfstring{SetDamage()}{SetDamage()}}
+{\footnotesize\ttfamily virtual void Creature\+::\+Set\+Damage (\begin{DoxyParamCaption}\item[{int}]{\+\_\+damage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_monster_aaca042407893415e2a1d305355e8ae3e}{Monster}}, and \mbox{\hyperlink{class_player_ae4c294bb9a9a857b887c97c84e2d48f0}{Player}}.
+
+\mbox{\Hypertarget{class_creature_a023c34d1c29de2c3b2231aa639ac7c04}\label{class_creature_a023c34d1c29de2c3b2231aa639ac7c04}} 
+\index{Creature@{Creature}!SetDefend@{SetDefend}}
+\index{SetDefend@{SetDefend}!Creature@{Creature}}
+\doxysubsubsection{\texorpdfstring{SetDefend()}{SetDefend()}}
+{\footnotesize\ttfamily virtual void Creature\+::\+Set\+Defend (\begin{DoxyParamCaption}\item[{int}]{\+\_\+defend }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_player_a66527b61189ce7f2d5c0898403ac670e}{Player}}.
+
+\mbox{\Hypertarget{class_creature_a9cb064868459bf4609d5e730141ef6df}\label{class_creature_a9cb064868459bf4609d5e730141ef6df}} 
+\index{Creature@{Creature}!SetHealth@{SetHealth}}
+\index{SetHealth@{SetHealth}!Creature@{Creature}}
+\doxysubsubsection{\texorpdfstring{SetHealth()}{SetHealth()}}
+{\footnotesize\ttfamily virtual void Creature\+::\+Set\+Health (\begin{DoxyParamCaption}\item[{int}]{\+\_\+hp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_monster_a1b5535d7feb6ebff9bef3ee53551c371}{Monster}}, and \mbox{\hyperlink{class_player_aa1be3d054b1b952ee0cdc7405d97c1c8}{Player}}.
+
+\mbox{\Hypertarget{class_creature_a5f4bb009b3b2a62151a4c171d2e282c0}\label{class_creature_a5f4bb009b3b2a62151a4c171d2e282c0}} 
+\index{Creature@{Creature}!SetName@{SetName}}
+\index{SetName@{SetName}!Creature@{Creature}}
+\doxysubsubsection{\texorpdfstring{SetName()}{SetName()}}
+{\footnotesize\ttfamily virtual void Creature\+::\+Set\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_monster_a144ff076260ed90310d0b7818cf0c769}{Monster}}, and \mbox{\hyperlink{class_player_a82ecb8f84e942fa38dd042fbb9dc0cc4}{Player}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/hamster/\+Desktop/\+Heads and Hands demo/\+Heads and Hands demo/\mbox{\hyperlink{_classes_8hpp}{Classes.\+hpp}}\item 
+/\+Users/hamster/\+Desktop/\+Heads and Hands demo/\+Heads and Hands demo/\mbox{\hyperlink{_classes_8cpp}{Classes.\+cpp}}\end{DoxyCompactItemize}

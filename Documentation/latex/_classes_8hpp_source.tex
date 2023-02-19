@@ -1,0 +1,123 @@
+\hypertarget{_classes_8hpp_source}{}\doxysection{Classes.\+hpp}
+\label{_classes_8hpp_source}\index{/Users/hamster/Desktop/Heads and Hands demo/Heads and Hands demo/Classes.hpp@{/Users/hamster/Desktop/Heads and Hands demo/Heads and Hands demo/Classes.hpp}}
+\mbox{\hyperlink{_classes_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ Classes\_hpp}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ Classes\_hpp}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_get_random_number_8hpp}{GetRandomNumber.hpp}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ M\ 0}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_creature}{Creature}}\ \{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00020\ \ \ \ \ std::string\ \mbox{\hyperlink{class_creature_ab213a18d660683c9f91e16bf32e2e928}{name}};\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_creature_ad3807e71a93353f7fb26e123e749d45d}{attack}}\ =\ 0;\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_creature_a049be5efd43c7baa5ef82af1fd1a43b2}{defend}}\ =\ 0;\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_creature_a7431afb99bd2f4b0e519803165d7de5c}{hp}}\ =\ 0;\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_creature_acfb6a35456dcd604954e67ebc00ada6f}{damage}}\ =\ 0;\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_creature_ae7a896aa0cbf7389c7a6f472b30a7e67}{modifier}}\ =\ 0;\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_creature_a38bc33a10d4ff1164a3f8f572bf29c6d}{gen}}\ =\ 0;\ }
+\DoxyCodeLine{00027\ \ \ \ \ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ Attack(\mbox{\hyperlink{class_creature}{Creature}}*\ obj)\ =\ 0;}
+\DoxyCodeLine{00030\ \ \ \ \ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{int}\ GetAttack()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00032\ \ \ \ \ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{int}\ GetDefend()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00034\ \ \ \ \ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{int}\ GetHealth()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00036\ \ \ \ \ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{int}\ GetDamage()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00038\ \ \ \ \ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ GetName()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00040\ \ \ \ \ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ SetAttack(\textcolor{keywordtype}{int}\ \_attack)\ =\ 0;}
+\DoxyCodeLine{00042\ \ \ \ \ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ SetDefend(\textcolor{keywordtype}{int}\ \_defend)\ =\ 0;}
+\DoxyCodeLine{00044\ \ \ \ \ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ SetHealth(\textcolor{keywordtype}{int}\ \_hp)\ =\ 0;}
+\DoxyCodeLine{00046\ \ \ \ \ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ SetDamage(\textcolor{keywordtype}{int}\ \_damage)\ =\ 0;}
+\DoxyCodeLine{00048\ \ \ \ \ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ SetName(\textcolor{keyword}{const}\ std::string\&\ s)\ =\ 0;}
+\DoxyCodeLine{00050\ \ \ \ \ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_creature_aa991b23f4813fbdb6f875204ed49814d}{\string~Creature}}();}
+\DoxyCodeLine{00052\ \ \ \ \ }
+\DoxyCodeLine{00053\ \};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00060\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_monster}{Monster}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_creature}{Creature}}\ \{}
+\DoxyCodeLine{00061\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{void}\ SetAttack(\textcolor{keywordtype}{int}\ \_attack)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00063\ \ \ \ \ }
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ SetDefend(\textcolor{keywordtype}{int}\ \_defend)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00065\ \ \ \ \ }
+\DoxyCodeLine{00066\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00067\ \ \ \ \ \mbox{\hyperlink{class_monster}{Monster}}(\textcolor{keywordtype}{int}\ \_attack,\ \textcolor{keywordtype}{int}\ \_defend);}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_monster_a08844f1c497bd631542a23c8a9dcffa0}{GetAttack}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00070\ \ \ \ \ }
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_monster_ab613d8ce45d0b6550e44dae34313c72f}{GetDefend}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00072\ \ \ \ \ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_monster_a12280c52c5f4d5fe1e9be465f450a5b5}{GetHealth}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00074\ \ \ \ \ }
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_monster_a3aab22ea7c22f6dba6949ca3c62efded}{GetDamage}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00076\ \ \ \ \ }
+\DoxyCodeLine{00077\ \ \ \ \ std::string\ \mbox{\hyperlink{class_monster_a8a4df855223a5d224f10d51bc193a4be}{GetName}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00078\ \ \ \ \ }
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_monster_a1b5535d7feb6ebff9bef3ee53551c371}{SetHealth}}(\textcolor{keywordtype}{int}\ \_hp)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00080\ \ \ \ \ }
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_monster_aaca042407893415e2a1d305355e8ae3e}{SetDamage}}(\textcolor{keywordtype}{int}\ \_damage)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00082\ \ \ \ \ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_monster_a144ff076260ed90310d0b7818cf0c769}{SetName}}(\textcolor{keyword}{const}\ std::string\&\ s)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00084\ \ \ \ \ }
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_monster_ac082b244ada15828e58afc1ef6859f32}{Attack}}(\mbox{\hyperlink{class_creature}{Creature}}*\ obj)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00086\ \ \ \ \ }
+\DoxyCodeLine{00087\ \};}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00094\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_player}{Player}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_creature}{Creature}}\ \{}
+\DoxyCodeLine{00095\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00096\ \ \ \ \ \mbox{\hyperlink{class_player}{Player}}();}
+\DoxyCodeLine{00097\ \ \ \ \ \mbox{\hyperlink{class_player}{\string~Player}}();}
+\DoxyCodeLine{00098\ \ \ \ \ }
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_player}{Player}}*\ PlayerConnection;\ }
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordtype}{int}\ counter\_reg\ =\ 0;\ }
+\DoxyCodeLine{00101\ \ \ \ \ }
+\DoxyCodeLine{00102\ \ \ \ \ \mbox{\hyperlink{class_player}{Player}}(\mbox{\hyperlink{class_player}{Player}}\ \textcolor{keyword}{const}\&)\ =\ \textcolor{keyword}{delete};\ }
+\DoxyCodeLine{00103\ \ \ \ \ \mbox{\hyperlink{class_player}{Player}}\&\ operator=\ (\mbox{\hyperlink{class_player}{Player}}\ \textcolor{keyword}{const}\&)\ =\ \textcolor{keyword}{delete};\ }
+\DoxyCodeLine{00104\ \ \ \ \ }
+\DoxyCodeLine{00105\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_player}{Player}}*\ \mbox{\hyperlink{class_player_a5b7946a8b7a28e2db3d4ebf4dad6cf9f}{GetPlayer}}();}
+\DoxyCodeLine{00107\ \ \ \ \ }
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_player}{Player}}*\ \mbox{\hyperlink{class_player_a146a06127f8997ee0a92a1b36b0ebddb}{CheckPlayer}}();}
+\DoxyCodeLine{00109\ \ \ \ \ }
+\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_player_a97325dbee44f97e4f94b174b15cecc92}{GetAttack}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00111\ \ \ \ \ }
+\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_player_a996981899afd11c9fc9ccd8e320e4856}{GetDefend}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00113\ \ \ \ \ }
+\DoxyCodeLine{00114\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_player_aa0d39b47aef31cb67ad8ef027ca463e9}{GetHealth}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00115\ \ \ \ \ }
+\DoxyCodeLine{00116\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_player_afc1ab229894af528abeee1e1d149ac98}{GetDamage}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00117\ \ \ \ \ }
+\DoxyCodeLine{00118\ \ \ \ \ std::string\ \mbox{\hyperlink{class_player_a73a3adfd6de89909cbc847dfcc126fff}{GetName}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00119\ \ \ \ \ }
+\DoxyCodeLine{00120\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_ae2227f5a5b113ff8795383710ab6d7db}{SetAttack}}(\textcolor{keywordtype}{int}\ \_attack)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00121\ \ \ \ \ }
+\DoxyCodeLine{00122\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_a66527b61189ce7f2d5c0898403ac670e}{SetDefend}}(\textcolor{keywordtype}{int}\ \_defend)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00123\ \ \ \ \ }
+\DoxyCodeLine{00124\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_aa1be3d054b1b952ee0cdc7405d97c1c8}{SetHealth}}(\textcolor{keywordtype}{int}\ \_hp)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00125\ \ \ \ \ }
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_ae4c294bb9a9a857b887c97c84e2d48f0}{SetDamage}}(\textcolor{keywordtype}{int}\ \_damage)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00127\ \ \ \ \ }
+\DoxyCodeLine{00128\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_a82ecb8f84e942fa38dd042fbb9dc0cc4}{SetName}}(\textcolor{keyword}{const}\ std::string\&\ s)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00129\ \ \ \ \ }
+\DoxyCodeLine{00130\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_a3475d6c758900711074d2a1a9d53951b}{Regeneration}}(\textcolor{keywordtype}{int}\ max\_player\_hp);}
+\DoxyCodeLine{00131\ \ \ \ \ }
+\DoxyCodeLine{00132\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_a3e3a2572a228bddadfccd24f6f85e6ae}{Attack}}(\mbox{\hyperlink{class_creature}{Creature}}*\ obj)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00133\ \ \ \ \ }
+\DoxyCodeLine{00134\ \};}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00136\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ Classes\_hpp\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

@@ -1,0 +1,247 @@
+\hypertarget{class_monster}{}\doxysection{Monster Class Reference}
+\label{class_monster}\index{Monster@{Monster}}
+
+
+Derived class \mbox{\hyperlink{class_monster}{Monster}}.  
+
+
+
+
+{\ttfamily \#include $<$Classes.\+hpp$>$}
+
+Inheritance diagram for Monster\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_monster}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_monster_a31cdfbdee0c409839697049082ab424f}{Monster}} (int \+\_\+attack, int \+\_\+defend)
+\item 
+int \mbox{\hyperlink{class_monster_a08844f1c497bd631542a23c8a9dcffa0}{Get\+Attack}} () const override
+\item 
+int \mbox{\hyperlink{class_monster_ab613d8ce45d0b6550e44dae34313c72f}{Get\+Defend}} () const override
+\item 
+int \mbox{\hyperlink{class_monster_a12280c52c5f4d5fe1e9be465f450a5b5}{Get\+Health}} () const override
+\item 
+int \mbox{\hyperlink{class_monster_a3aab22ea7c22f6dba6949ca3c62efded}{Get\+Damage}} () const override
+\item 
+std\+::string \mbox{\hyperlink{class_monster_a8a4df855223a5d224f10d51bc193a4be}{Get\+Name}} () const override
+\item 
+void \mbox{\hyperlink{class_monster_a1b5535d7feb6ebff9bef3ee53551c371}{Set\+Health}} (int \+\_\+hp) override
+\item 
+void \mbox{\hyperlink{class_monster_aaca042407893415e2a1d305355e8ae3e}{Set\+Damage}} (int \+\_\+damage) override
+\item 
+void \mbox{\hyperlink{class_monster_a144ff076260ed90310d0b7818cf0c769}{Set\+Name}} (const std\+::string \&s) override
+\item 
+void \mbox{\hyperlink{class_monster_ac082b244ada15828e58afc1ef6859f32}{Attack}} (\mbox{\hyperlink{class_creature}{Creature}} $\ast$obj) override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_creature}{Creature}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_creature_a90956d8bc45ececda2bd311f03f6420d}{Attack}} (\mbox{\hyperlink{class_creature}{Creature}} $\ast$obj)=0
+\item 
+virtual int \mbox{\hyperlink{class_creature_a04d1a98fd56b7736d165551ac39e7c7a}{Get\+Attack}} () const =0
+\item 
+virtual int \mbox{\hyperlink{class_creature_a29b247af6fabb0421330f1880d201e44}{Get\+Defend}} () const =0
+\item 
+virtual int \mbox{\hyperlink{class_creature_a719135bc64caa7dafaeea88b4ae6b6b6}{Get\+Health}} () const =0
+\item 
+virtual int \mbox{\hyperlink{class_creature_a28c2d0e2e94098577ec340554d20e150}{Get\+Damage}} () const =0
+\item 
+virtual std\+::string \mbox{\hyperlink{class_creature_a4d12942eb97f711163156c8ff8ca2720}{Get\+Name}} () const =0
+\item 
+virtual void \mbox{\hyperlink{class_creature_a1293e5667831b574e65c2135980235f3}{Set\+Attack}} (int \+\_\+attack)=0
+\item 
+virtual void \mbox{\hyperlink{class_creature_a023c34d1c29de2c3b2231aa639ac7c04}{Set\+Defend}} (int \+\_\+defend)=0
+\item 
+virtual void \mbox{\hyperlink{class_creature_a9cb064868459bf4609d5e730141ef6df}{Set\+Health}} (int \+\_\+hp)=0
+\item 
+virtual void \mbox{\hyperlink{class_creature_a0b8ffca8bb6add8a2bad49067d105dba}{Set\+Damage}} (int \+\_\+damage)=0
+\item 
+virtual void \mbox{\hyperlink{class_creature_a5f4bb009b3b2a62151a4c171d2e282c0}{Set\+Name}} (const std\+::string \&s)=0
+\item 
+virtual \mbox{\hyperlink{class_creature_aa991b23f4813fbdb6f875204ed49814d}{$\sim$\+Creature}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_creature}{Creature}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_creature_ab213a18d660683c9f91e16bf32e2e928}\label{class_creature_ab213a18d660683c9f91e16bf32e2e928}} 
+std\+::string {\bfseries name}
+\begin{DoxyCompactList}\small\item\em Character\textquotesingle{}s name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_creature_ad3807e71a93353f7fb26e123e749d45d}\label{class_creature_ad3807e71a93353f7fb26e123e749d45d}} 
+int {\bfseries attack} = 0
+\begin{DoxyCompactList}\small\item\em Character attack. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_creature_a049be5efd43c7baa5ef82af1fd1a43b2}\label{class_creature_a049be5efd43c7baa5ef82af1fd1a43b2}} 
+int {\bfseries defend} = 0
+\begin{DoxyCompactList}\small\item\em Character defend. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_creature_a7431afb99bd2f4b0e519803165d7de5c}\label{class_creature_a7431afb99bd2f4b0e519803165d7de5c}} 
+int {\bfseries hp} = 0
+\begin{DoxyCompactList}\small\item\em Character health points. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_creature_acfb6a35456dcd604954e67ebc00ada6f}\label{class_creature_acfb6a35456dcd604954e67ebc00ada6f}} 
+int {\bfseries damage} = 0
+\begin{DoxyCompactList}\small\item\em Character\textquotesingle{}s maximum damage. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_creature_ae7a896aa0cbf7389c7a6f472b30a7e67}\label{class_creature_ae7a896aa0cbf7389c7a6f472b30a7e67}} 
+int {\bfseries modifier} = 0
+\begin{DoxyCompactList}\small\item\em Attack modifier. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_creature_a38bc33a10d4ff1164a3f8f572bf29c6d}\label{class_creature_a38bc33a10d4ff1164a3f8f572bf29c6d}} 
+int {\bfseries gen} = 0
+\begin{DoxyCompactList}\small\item\em The actual value of the character\textquotesingle{}s damage calculated at the moment of impact. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Derived class \mbox{\hyperlink{class_monster}{Monster}}. 
+
+The class contains the overridden functions of the base class 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_monster_a31cdfbdee0c409839697049082ab424f}\label{class_monster_a31cdfbdee0c409839697049082ab424f}} 
+\index{Monster@{Monster}!Monster@{Monster}}
+\index{Monster@{Monster}!Monster@{Monster}}
+\doxysubsubsection{\texorpdfstring{Monster()}{Monster()}}
+{\footnotesize\ttfamily Monster\+::\+Monster (\begin{DoxyParamCaption}\item[{int}]{\+\_\+attack,  }\item[{int}]{\+\_\+defend }\end{DoxyParamCaption})}
+
+Moster\textquotesingle{}s object constructor 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \+\_\+attack} & \mbox{\hyperlink{class_monster}{Monster}}\textquotesingle{}s attack values \\
+\hline
+\mbox{\texttt{ in}}  & {\em \+\_\+defend} & \mbox{\hyperlink{class_monster}{Monster}}\textquotesingle{}s defend values \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_monster_ac082b244ada15828e58afc1ef6859f32}\label{class_monster_ac082b244ada15828e58afc1ef6859f32}} 
+\index{Monster@{Monster}!Attack@{Attack}}
+\index{Attack@{Attack}!Monster@{Monster}}
+\doxysubsubsection{\texorpdfstring{Attack()}{Attack()}}
+{\footnotesize\ttfamily void Monster\+::\+Attack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_creature}{Creature}} $\ast$}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Simulates a monster attack 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em obj} & Attacked object \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_creature}{Creature}}.
+
+\mbox{\Hypertarget{class_monster_a08844f1c497bd631542a23c8a9dcffa0}\label{class_monster_a08844f1c497bd631542a23c8a9dcffa0}} 
+\index{Monster@{Monster}!GetAttack@{GetAttack}}
+\index{GetAttack@{GetAttack}!Monster@{Monster}}
+\doxysubsubsection{\texorpdfstring{GetAttack()}{GetAttack()}}
+{\footnotesize\ttfamily int Monster\+::\+Get\+Attack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Has no parameters \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_monster}{Monster}}\textquotesingle{}s attack value 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_creature}{Creature}}.
+
+\mbox{\Hypertarget{class_monster_a3aab22ea7c22f6dba6949ca3c62efded}\label{class_monster_a3aab22ea7c22f6dba6949ca3c62efded}} 
+\index{Monster@{Monster}!GetDamage@{GetDamage}}
+\index{GetDamage@{GetDamage}!Monster@{Monster}}
+\doxysubsubsection{\texorpdfstring{GetDamage()}{GetDamage()}}
+{\footnotesize\ttfamily int Monster\+::\+Get\+Damage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Has no parameters \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_monster}{Monster}}\textquotesingle{}s maximum damage value 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_creature}{Creature}}.
+
+\mbox{\Hypertarget{class_monster_ab613d8ce45d0b6550e44dae34313c72f}\label{class_monster_ab613d8ce45d0b6550e44dae34313c72f}} 
+\index{Monster@{Monster}!GetDefend@{GetDefend}}
+\index{GetDefend@{GetDefend}!Monster@{Monster}}
+\doxysubsubsection{\texorpdfstring{GetDefend()}{GetDefend()}}
+{\footnotesize\ttfamily int Monster\+::\+Get\+Defend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Has no parameters \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_monster}{Monster}}\textquotesingle{}s defend value 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_creature}{Creature}}.
+
+\mbox{\Hypertarget{class_monster_a12280c52c5f4d5fe1e9be465f450a5b5}\label{class_monster_a12280c52c5f4d5fe1e9be465f450a5b5}} 
+\index{Monster@{Monster}!GetHealth@{GetHealth}}
+\index{GetHealth@{GetHealth}!Monster@{Monster}}
+\doxysubsubsection{\texorpdfstring{GetHealth()}{GetHealth()}}
+{\footnotesize\ttfamily int Monster\+::\+Get\+Health (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Has no parameters \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_monster}{Monster}}\textquotesingle{}s health value 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_creature}{Creature}}.
+
+\mbox{\Hypertarget{class_monster_a8a4df855223a5d224f10d51bc193a4be}\label{class_monster_a8a4df855223a5d224f10d51bc193a4be}} 
+\index{Monster@{Monster}!GetName@{GetName}}
+\index{GetName@{GetName}!Monster@{Monster}}
+\doxysubsubsection{\texorpdfstring{GetName()}{GetName()}}
+{\footnotesize\ttfamily std\+::string Monster\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Has no parameters \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_monster}{Monster}}\textquotesingle{}s name 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_creature}{Creature}}.
+
+\mbox{\Hypertarget{class_monster_aaca042407893415e2a1d305355e8ae3e}\label{class_monster_aaca042407893415e2a1d305355e8ae3e}} 
+\index{Monster@{Monster}!SetDamage@{SetDamage}}
+\index{SetDamage@{SetDamage}!Monster@{Monster}}
+\doxysubsubsection{\texorpdfstring{SetDamage()}{SetDamage()}}
+{\footnotesize\ttfamily void Monster\+::\+Set\+Damage (\begin{DoxyParamCaption}\item[{int}]{\+\_\+damage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Sets the monster\textquotesingle{}s maximum damage value 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \+\_\+damage} & \mbox{\hyperlink{class_monster}{Monster}}\textquotesingle{}s maximum damage value \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_creature}{Creature}}.
+
+\mbox{\Hypertarget{class_monster_a1b5535d7feb6ebff9bef3ee53551c371}\label{class_monster_a1b5535d7feb6ebff9bef3ee53551c371}} 
+\index{Monster@{Monster}!SetHealth@{SetHealth}}
+\index{SetHealth@{SetHealth}!Monster@{Monster}}
+\doxysubsubsection{\texorpdfstring{SetHealth()}{SetHealth()}}
+{\footnotesize\ttfamily void Monster\+::\+Set\+Health (\begin{DoxyParamCaption}\item[{int}]{\+\_\+hp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Sets the monster\textquotesingle{}s health value 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \+\_\+hp} & \mbox{\hyperlink{class_monster}{Monster}}\textquotesingle{}s health value \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_creature}{Creature}}.
+
+\mbox{\Hypertarget{class_monster_a144ff076260ed90310d0b7818cf0c769}\label{class_monster_a144ff076260ed90310d0b7818cf0c769}} 
+\index{Monster@{Monster}!SetName@{SetName}}
+\index{SetName@{SetName}!Monster@{Monster}}
+\doxysubsubsection{\texorpdfstring{SetName()}{SetName()}}
+{\footnotesize\ttfamily void Monster\+::\+Set\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Sets the monster\textquotesingle{}s name 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em s} & \mbox{\hyperlink{class_monster}{Monster}}\textquotesingle{}s name \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_creature}{Creature}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/hamster/\+Desktop/\+Heads and Hands demo/\+Heads and Hands demo/\mbox{\hyperlink{_classes_8hpp}{Classes.\+hpp}}\item 
+/\+Users/hamster/\+Desktop/\+Heads and Hands demo/\+Heads and Hands demo/\mbox{\hyperlink{_classes_8cpp}{Classes.\+cpp}}\end{DoxyCompactItemize}
